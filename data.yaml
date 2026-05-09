@@ -1,0 +1,15 @@
+yaml_content = f"""
+path: {base_yolo_path} # dataset root dir
+train: images/train
+val: images/val
+test: images/test
+
+names:
+  0: car
+  1: motorcycle
+  2: rickshaw
+  3: bike
+"""
+
+with open('local_data.yaml', 'w') as f:
+    f.write(yaml_content)
